@@ -1,0 +1,146 @@
+@import url('https://fonts.cdnfonts.com/css/lemon-milk');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+/* Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --sunset: #ffe498;
+    --creme-dourado: #fbf0d1;
+    --roxo-claro: #7B6396;
+    --branco-creme: #FBFBF9;
+    --texto-escuro: #333;
+    --azul-peixe: rgb(71, 92, 255);
+    --transicao: 0.3s ease; /* Adicionado para os efeitos funcionarem */
+}
+
+body {
+    background-color: var(--creme-dourado);
+    color: var(--texto-escuro);
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Lemon Milk', sans-serif;
+    color: #000;
+}
+
+/* --- Cabeçalho --- */
+.cabecalho-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10%;
+    background-color: var(--sunset);
+}
+
+.cabecalho-logo {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.cabecalho-logo__img {
+    width: 3.5rem;
+    height: auto;
+}
+
+.nav__lista {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav__link {
+    color: var(--texto-escuro);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transicao);
+}
+
+.nav__link:hover {
+    color: var(--roxo-claro);
+}
+
+/* --- Seção do Coral --- */
+.destaque-coral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 5%;
+    text-align: center;
+}
+
+.destaque-coral__img {
+    max-width: 85%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.destaque-coral__descricao {
+    margin-top: 1.5rem;
+    max-width: 700px;
+    font-size: 1.1rem;
+}
+
+/* --- Enciclopédia --- */
+.enciclopedia {
+    padding: 2rem 10%;
+}
+
+.enciclopedia__titulo {
+    margin-bottom: 2rem;
+}
+
+/* --- Card de Peixe --- */
+.cartao-peixe {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: transform var(--transicao);
+}
+
+.cartao-peixe:hover {
+    transform: translateY(-5px);
+}
+
+.peixe__conteudo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--branco-creme);
+    border-radius: 20px;
+    border: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.peixe__cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.peixe__img {
+    width: 180px;
+    height: auto;
+    mix-blend-mode: multiply;
+    margin-bottom: 1rem;
+}
+
+.peixe__corpo {
+    padding: 2rem 10%;
+}
+
+.peixe__nome {
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--azul-peixe); /* Usando a variável que criamos */
+}
