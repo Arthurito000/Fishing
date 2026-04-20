@@ -1,0 +1,133 @@
+@import url('https://fonts.cdnfonts.com/css/lemon-milk');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+/* Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --sunset: #ffe498;
+    --creme-dourado: #fbf0d1;
+    --roxo-claro: #7B6396;
+    --branco-creme: #FBFBF9;
+    --texto-escuro: #333;
+    --azul-peixe: rgb(71, 92, 255);
+    --transicao: 0.3s ease; /* Adicionado para os efeitos funcionarem */
+}
+
+body {
+    background-color: var(--creme-dourado);
+    color: var(--texto-escuro);
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Lemon Milk', sans-serif;
+    color: #000;
+}
+
+/* --- Cabeçalho --- */
+.cabecalho-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10%;
+    background-color: var(--sunset);
+}
+
+.cabecalho-logo {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.cabecalho-logo__img {
+    width: 3.5rem;
+    height: auto;
+}
+
+.nav__lista {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav__link {
+    color: var(--texto-escuro);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transicao);
+}
+
+.nav__link:hover {
+    color: var(--roxo-claro);
+}
+
+/* Card do Peixe */
+
+.cartao__peixe {
+    margin: 2rem auto;
+    padding: 0 5% 2rem;
+}
+
+/* Melhoria no Card */
+.superior {
+    padding: 2rem;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    background-color: var(--branco-creme);
+    border: 1px solid rgba(0,0,0,0.1); /* Borda mais sutil */
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.peixe__cabecalho {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.peixe__img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    mix-blend-mode: multiply;
+    border-radius: 15px;
+    transition: transform var(--transicao);
+}
+
+.peixe__img:hover {
+    transform: scale(1.02); /* Efeito de zoom leve ao passar o mouse */
+}
+
+.peixe__nome {
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.peixe__geral {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Melhoria no Corpo do Texto */
+.corpo {
+    margin-top: 2rem;
+    padding: 2rem;
+    text-align: justify;
+    background-color: var(--branco-creme);
+    border: 1px solid rgba(0,0,0,0.1); /* Borda mais sutil */
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.grupo {
+    margin: 2rem;
+}
