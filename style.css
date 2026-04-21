@@ -91,7 +91,7 @@ h1, h2, h3 {
 
 /* --- Enciclopédia --- */
 .enciclopedia {
-    padding: 2rem 5%;
+    padding: 2rem 2.5%;
 }
 
 .enciclopedia__titulo {
@@ -105,7 +105,7 @@ h1, h2, h3 {
 
 .peixe__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 2rem;
 }
 /* --- Card de Peixe --- */
@@ -140,8 +140,8 @@ h1, h2, h3 {
 }
 
 .peixe__img {
-    width: 180px;
-    height: auto;
+    width: 260px;
+    height: 152.89px;
     mix-blend-mode: multiply;
     margin-bottom: 1rem;
     border: 5px solid rgba(0,0,0,0.05);
