@@ -37,6 +37,7 @@
                 </div>
             </div>
 
+            <!--
             <div class="formulario__linha">
                 <div class="campo-input">
                     <label for="habitat_peixe">Habitat</label>
@@ -46,6 +47,11 @@
                     <label for="nutricao_peixe">Nutrição</label>
                     <input type="text" id="nutricao_peixe" placeholder="Ex: Frutos, Algas" required>
                 </div>
+            </div> -->
+
+            <div class="campo-input">
+                <label for="imagem">URL de Imagem</label>
+                <input type="url" id="imagem" placeholder="Ex: https://www.urldaimagem.com"></textarea>
             </div>
 
             <div class="campo-input">
@@ -55,5 +61,16 @@
 
         </form>
     </section>
+
+    <section class="botao">
+        <button type="submit" onclick="evento()">Submeter</button>
+    </section>
+
+
+    <section id="adicionados" class="adicionados">
+        
+    </section>
+
+    <script src="form.js"></script>
 </body>
 </html>

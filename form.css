@@ -103,3 +103,16 @@ input, textarea {
     background-color: #fff;
     transition: var(--transicao);
 }
+
+.botao {
+    margin: auto;
+    padding: 1rem 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    margin: 0;
+    padding: 0.5rem 5%;
+    font-family: 'Montserrat', sans-serif;
+}
