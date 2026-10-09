@@ -7,6 +7,21 @@
 
 }
 
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const novo = new novo(titulo, descricao, imagem);
+
+    fetch('/api/lista', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'},
+        body: JSON.stringfy(novo)
+    })
+    .then(() => {
+        window.location.href = 'index.html';
+    });
+});
 
 const container = document.querySelector('.todosCards');
 //console.log(container);
